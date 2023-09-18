@@ -1,0 +1,16 @@
+.user-profile {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 74px;
+    left: 0;
+    padding: 20px;
+    background: var(--white);
+    box-shadow: 0 4px 10px 10px rgba(0, 0, 0, 0.05);
+}
+.articles {
+    width: calc(100% - 320px);
+    position: absolute;
+    top: 74px;
+    left: 320px;
+}
