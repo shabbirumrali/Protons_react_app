@@ -1,5 +1,7 @@
 import React from 'react';
-import { UserProfile, Article } from './components/index';
+import { Routes, Route } from 'react-router-dom';
+import { Home, About, Gallery, Contact, Login } from './pages';
+import { Navigation } from './components';
 
 // styles
 import './App.css';
@@ -7,12 +9,14 @@ import './App.css';
 const App = () => {
   return (
     <div className='App flex'>
-        <div className='user-profile'>
-          <UserProfile />
-        </div>
-        <div className='articles'>
-          <Article />
-        </div>
+      <Navigation />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/gallery' element={<Gallery />} />
+          <Route path='/login' element={<Login />} />
+        </Routes>
     </div>
   )
 }

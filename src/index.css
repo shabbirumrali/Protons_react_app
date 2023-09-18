@@ -31,6 +31,11 @@ p {
     margin: 10px 0;
     font-weight: var(--font-weight-medium);
 }
+ul {
+    list-style-type: none;
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-medium);
+}
 body {
     margin: 0;
     padding: 0;
@@ -44,6 +49,6 @@ body {
     width: 80px;
     height: 45px;
     background: var(--primary-color);
-    font-size: var(--font-size-button);
+    font-size: var(--font-size-text);
     font-weight: var(--font-weight-medium);
 }
