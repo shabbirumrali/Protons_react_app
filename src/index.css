@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --dark-color: #534E50;
+    --primary-color: #FF8787;
+    --light-color: #FFF8F8;
+    --white: #fff;
+
+    /* font size */
+    --font-size-small: 0.9rem;
+    --font-size-text: 1.1rem;
+    --font-size-title: 1.5rem;
+    --font-size-button: 1.3rem;
+    
+    /* font weight */
+    --font-weight-normal: 400;
+    --font-weight-regular: 500;
+    --font-weight-medium: 600;
+    --font-weight-semibold: 700;
+    --font-weight-bold: 800;
+    --font-weight-black: 900;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+p {
+    font-size: var(--font-size-small);
+    margin: 10px 0;
+    font-weight: var(--font-weight-medium);
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.flex {
+    display: flex;
+    gap: 20px;
+}
+.button {
+    border: none;
+    width: 80px;
+    height: 45px;
+    background: var(--primary-color);
+    font-size: var(--font-size-button);
+    font-weight: var(--font-weight-medium);
+}
